@@ -18,5 +18,5 @@
 - **角色控制**：利用 Unity Standard Assets 中的 First Person Controller 进行改造，增加用于击球的“减震器(Bumper)”。
 - **脚本编程**：使用 C# 编写游戏逻辑，包括随机速度生成、触发器检测、游戏状态管理和简单的 UI 界面显示。
 
-## 如何运行
+## 运行方法
 双击re2.exe以运行游戏。
