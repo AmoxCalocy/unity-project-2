@@ -12,16 +12,6 @@
   - 彩球和混乱球的初始速度和方向是随机的。
   - 游戏不存在失败条件，只有完成时间的挑战。
 
-## 目录结构
-- `Materials/`: 包含游戏中使用的各种材质，如墙壁材质、不同颜色的球材质（红、蓝、绿、橙、黄）以及自定义的超级弹性物理材质 `SuperBouncy.physicMaterial`。
-- `Prefabs/`: 存放预制体，如墙壁 `Wall.prefab`，方便重复使用。
-- `Scenes/`: 包含游戏的主场景 `SampleScene.unity`。
-- `Scripts/`: 包含游戏的核心逻辑脚本：
-  - `VelocityScripts.cs`: 赋予球体随机初始速度并限制其移动轴。
-  - `GoalScripts.cs`: 附加在球门上，检测是否有对应颜色的彩球进入触发器。
-  - `GameControlScripts.cs`: 游戏总控脚本，检查所有球门的状态以判定游戏是否获胜并显示 GUI 提示。
-- `StandardAssets/`: Unity 标准资源包，包含第一人称角色控制器 (`Characters`)、环境资源 (`Environment`) 等。
-
 ## 开发技术点
 - **场景构建**：使用地形(Terrain)和基本几何体(Cube)搭建游戏舞台，并进行纹理贴图。
 - **物理系统**：运用刚体(Rigidbody)、碰撞器(Collider)和触发器(Trigger)。自定义 `Physic Material` 实现无动能损耗的完美反弹。
